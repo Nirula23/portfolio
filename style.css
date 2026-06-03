@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding:0;
+    /* background-color: #f4f1de; */
+}
+nav{
+    display:flex;
+    font-family: "Cousine";
+    /* font-style: italic; */
+    justify-content:space-around;
+    background-color: #3d405b;
+    padding: 10px 0;
+    color: white;
+}
+.logo{
+    font-size:18px;
+    font-weight:bolder;
+    /* background-color: #3d405b; */
+}
+nav ul{
+    display:flex;
+    gap: 14px;
+    position:sticky;
+    top:0;
+    list-style:none;
+    align-items:center;
+}
+nav ul li{
+    font-size:14px;
+    color: white;
+}
+.hero{
+    background-color: #f4f1de;
+    height: 70vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-left .greet{
+    font-size: 50px;
+    font-family: "Iosevka Charon";
+    font-style: italic;
+}
+.hero-left .tagline{
+    font-size: 20px;
+    font-family: "Iosevka Charon";
+    font-style: italic;
+}
+.hero-left .description{
+    font-size: 14px;
+    font-family: "Iosevka Charon";
+    padding: 10px 20px 0px 0px
+}
+.bold{
+    font-weight: bold;
+}
+.button-container{
+    padding: 10px 0;
+}
+.btn{
+    background-color: #81b29a;
+    color: #3d405b;
+    padding: 9px 11px;
+    border-radius:10px;
+    border:none;
+    font-family: "Cousine";
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btn:hover{
+    background-color:#3d405b;
+    color: #81b29a;
+    transition: 0.3s all;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+    padding: 0px 0px 0px 20px;
+}
+.projects{
+    background-color:#f2cc8f;
+}
+footer{
+    background-color: #3d405b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media screen and (max-width:950px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .hero{
+        flex-direction:column;
+        text-align: center;
+    }
+    .project-list{
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-item{
+        flex-direction:column;
+        padding: 10px 0px 10px 0px;
+    }
+    .project-item h3{
+        padding: 10px 0px 5px 0px;
+    }
+    .project-item img{
+        width: 40vw;
+        height:40vh
+    }
+
+}
