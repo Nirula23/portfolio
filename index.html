@@ -12,11 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
     <style>
-        .projects {
-            font-family: 'Space Grotesk', monospace;
-            color:#fffff0;
-        }
-
         .project-item {
             display: flex;
             margin-bottom: 20px;
@@ -50,47 +45,177 @@
 
 <body>
     <nav>
-        <div class="logo">Nirula's Portfolio</div>
+        <div class="logo">nirula</div>
         <ul class="nav-links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profiles">Profiles</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
         <section class="hero">
-            <div class="hero-left">
-                <div class="greet">Hey there, my name is</div>
-                <div class="name">Nirula</div>
-                <div class="tagline">I build, <span class="bold code">&lt;code/&gt;</span>, ship</div>
-                <div class="description">I am a passionate full-stack developer with a knack for creating efficient and scalable web applications.</div>
-                <div class="button-container">
-                    <button class="btn bold">View Projects</button>
-                    <button class="btn bold">Contact Me</button>
-                </div>
+            <div class="greet text-code">
+                <p>Hey there, my name is</p>
             </div>
-            <div class="hero-right">
-                <img src="profile.jpg" alt="Profile Picture">
+            <div class="name heading-lg">
+                <h2>Nirula</h2>
+            </div>
+            <div class="tagline heading-lg fade-font">Learning, building, and shipping one project at a time.</div>
+            <div class="description text-primary">I am a passionate full-stack developer with a knack for creating
+                efficient and
+                scalable web applications.</div>
+            <div class="button-container">
+                <button class="btn bold"><a href="resume.pdf">View Resume</a></button>
+                <button class="btn bold">Contact Me</button>
             </div>
         </section>
-        <section class="projects">
-            <h2>Projects</h2>
+        <section id="about" class="section">
+            <h2 class="section-heading">About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste, numquam accusantium maiores veniam
+                quia! Minima incidunt consectetur iste explicabo nihil sunt ullam, facilis aspernatur, autem ipsam
+                similique voluptatem ipsa.</p>
+        </section>
+        <section id="skills" class="section">
+            <h1 class="section-heading">Skills</h1>
+            <div class="skill-grid">
+                <div class="frontend skill-group">
+                    <h3 class="heading-md">Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="backend skill-group">
+                    <h3 class="heading-md">backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                    </ul>
+                </div>
+                <div class="languages skill-group">
+                    <h3 class="heading-md">Languages</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tools skill-group">
+                    <h3 class="heading-md">Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VSCode</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2 class="section-heading">Projects</h2>
             <div class="project-list">
                 <div class="project-item">
-                    <div><img src="project1.png" alt="Project One Screenshot"></div>
+                    <img class="project-img" src="project1.png" alt="Project One snapshot">
                     <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A web application that allows users to track their tasks and manage their time effectively.
+                        <h3 class="heading-md project-title">StackTrail</h3>
+                        <p class="description text-primary">A web application that allows users to track their tasks and
+                            manage their time effectively.
                         </p>
+                        <div class="tech-stack">
+                            <ul class="list text-code">
+                                <div class="text-secondary">Frontend
+                                    <li>HTML, CSS, JavaScript</li>
+                                </div>
+                                <div class="text-secondary">Backend
+                                    <li>HTML, CSS, JavaScript</li>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="project-item pr2 row-reverse">
-                    <div><img src="project2.jpeg" alt="Project Two Screenshot"></div>
+                <div class="project-item">
+                    <img class="project-img" src="project1.png" alt="Project One snapshot">
                     <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and
-                            skills.</p>
+                        <h3 class="heading-md project-title">StackTrail</h3>
+                        <p class="description text-primary">A web application that allows users to track their tasks and
+                            manage their time effectively.
+                        </p>
+                        <div class="tech-stack">
+                            <ul class="list text-code">
+                                <div class="text-secondary">Frontend
+                                    <li>HTML, CSS, JavaScript</li>
+                                </div>
+                                <div class="text-secondary">Backend
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="now" class="section">
+            <div class="container now">
+                <h2 class="section-heading">Open Tabs</h2>
+                <p class="section-description">At the moment, I'm</p>
+                <div class="now-grid">
+                    <div class="now-item">
+                        <h3 class="now-title">Learning</h3>
+                        <p class="now-content">
+                            React, Django, and modern frontend practices.
+                        </p>
+                    </div>
+
+                    <div class="now-item">
+                        <h3 class="now-title">Building</h3>
+                        <p class="now-content">
+                            StackTrail v2 — a platform to track coding progress and analytics.
+                        </p>
+                    </div>
+
+                    <div class="now-item">
+                        <h3 class="now-title">Working On</h3>
+                        <p class="now-content">
+                            Improving problem-solving skills through DSA and contests.
+                        </p>
+                    </div>
+
+                    <div class="now-item">
+                        <h3 class="now-title">Contributing</h3>
+                        <p class="now-content">
+                            GSSoC 2026
+                            <a href="#" class="inline-link">View Profile ↗</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="profiles" class="section">
+            <h1 class="section-heading">Profiles</h1>
+            <div class="profile-list">
+                <div class="coding">
+                    <h2 class="heading-md">Coding</h2>
+                    <div class="leetcode">
+                        <a href="https://leetcode.com/u/nirula23/">LeetCode</a>
+                    </div>
+                    <div class="codeforces">
+                        <a href="https://leetcode.com/u/nirula23/">CodeForces</a>
+                    </div>
+                    <div class="atcoder">
+                        <a href="https://leetcode.com/u/nirula23/">AtCoder</a>
+                    </div>
+                    <div class="codolio">
+                        <a href="https://leetcode.com/u/nirula23/">Codolio</a>
+                    </div>
+                </div>
+                <div class="development">
+                    <h2 class="heading-md">Development & OpenSource</h2>
+                    <div class="github">
+                        <a href="https://leetcode.com/u/nirula23/">Github</a>
                     </div>
                 </div>
             </div>
