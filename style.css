@@ -169,7 +169,7 @@ main {
     border-width: 0.65px;
     font-family: "Fira Code", monospace;
     color: var(--bronze);
-    font-size: var(--fs-xs);
+    font-size: 0.75rem;
     cursor: pointer;
     font-weight: bolder;
 }
