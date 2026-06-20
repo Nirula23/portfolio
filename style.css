@@ -5,31 +5,89 @@
 --ivory: #fffff0ff;
 */
 :root {
-    --fs-xs: .875rem;
+    /* font-size variables */
+    --fs-xs: 0.875rem;
     --fs-sm: 1rem;
     --fs-md: 1.5rem;
-    --fs-lg: 2.5rem;
-    --fs-xl: 3.5rem;
+    --fs-lg: 3rem;
+    --fs-xl: 4rem;
+
+    /* font-color variables */
+    /* Base */
+    --bg: #F3F4ED;
+    --surface: #fdfef7;
+    --border: #E4E6DF;
+
+    /* Brand */
+    --space-blue: #2B2A4C;
+    --bronze: #D05D11;
+
+    /* Text */
+    --text-main: #22223B;
+    --text-sec: #5F6470;
+
+    /* States */
+    --hover: #B6520F;
+    --shadow: rgba(43, 42, 76, 0.08);
+    --fade: #2b2a4ce1;
 }
 h1,h2,h3,p{
     margin:0;
 }
+.heading-lg, .section-heading{
+    color: var(--space-blue);
+    font-family: "Space Grotesk";
+}
 h1, .heading-lg, .name{
     font-size: var(--fs-xl);
+    color: var(--space-blue);
+    font-weight: 500;
 }
 h2, .section-heading{
     font-size: var(--fs-lg);
+    margin-bottom: 24px;
+    font-weight: bold;
 }
 h3, .section-subhead{
     font-size: var(--fs-md);
+    color: var(--space-blue);
+    font-family: "Inter";
+    font-weight: 600;
 }
 p, .text-primary{
     font-size: var(--fs-sm);
+    font-family: "Inter";
+    color: var(--text-main);
+}
+.eyebrow-heading{
+    color: #D05D11;
+    font-family: "Fira Code";
+    font-weight: 500;
+}
+.text-code{
+    font-family: "Fira Code", monospace;
+    color: var(--text-main);
+}
+.text-bronze{
+    color: var(--bronze);
+}
+.fade-font{
+    color: var(--fade);
+}
+.tagline{
+    font-size: var(--fs-lg);
 }
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.logo{
+    font-family: "Snowburst One";
+    font-style: italic;
+    font-size: var(--fs-lg);
+    font-weight: bold;
+    color: var(--bronze);
 }
 nav {
     display: flex;
@@ -37,6 +95,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
+    background-color: var(--surface);
+    border-bottom: var(--border);
 }
 .nav-links {
     display: flex;
@@ -61,16 +121,11 @@ main {
     flex-direction: column;
     gap: 10px;
 }
+#hero .text-primary{
+    margin-right: 30vw;
+}
 .heading-md{
     font-size: var(--fs-md);
-}
-.text-primary{
-    font-size: var(--fs-sm);
-}
-.text-code {
-    font-family: 'Cascadia Code', monospace;
-    font-style: normal;
-    font-size: 25px;
 }
 .bold {
     font-weight: bold;
