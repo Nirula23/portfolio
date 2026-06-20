@@ -4,133 +4,106 @@
 --cool-steel: #94a3b8ff;
 --ivory: #fffff0ff;
 */
-*{
-    margin: 0px;
-    padding:0;
-    background-color:#050e3c;
+:root {
+    --fs-xs: .875rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.5rem;
+    --fs-lg: 2.5rem;
+    --fs-xl: 3.5rem;
 }
-nav{
-    display:flex;
+h1,h2,h3,p{
+    margin:0;
+}
+h1, .heading-lg, .name{
+    font-size: var(--fs-xl);
+}
+h2, .section-heading{
+    font-size: var(--fs-lg);
+}
+h3, .section-subhead{
+    font-size: var(--fs-md);
+}
+p, .text-primary{
+    font-size: var(--fs-sm);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
     font-family: "Space Grotesk", sans-serif;
-    /* font-style: italic; */
-    justify-content:space-around;
-    background-color: #050e3c;
-    padding: 10px 0;
-    color: #fffff0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
 }
-.logo{
-    font-size:18px;
-    font-weight:bolder;
-    /* background-color: #3d405b; */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 16px;
+    font-size: var(--fs-sm);
 }
-nav ul{
-    display:flex;
-    gap: 14px;
-    position:sticky;
-    top:0;
-    list-style:none;
-    align-items:center;
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 30px;
 }
-nav ul li{
-    font-size:14px;
-    color: #fffff0;
+.section{
+    padding: 2rem 4rem;
 }
-.hero{
-    background-color: #050e3c;
-    height: 70vh;
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-start;
+#hero{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.hero-left .name{
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: #fffff0;;
+.heading-md{
+    font-size: var(--fs-md);
 }
-.hero-left .greet{
-    font-size: 14px;
-    font-family: "Space Grotesk", sans-serif;
-    color: #ff3838ff;
+.text-primary{
+    font-size: var(--fs-sm);
 }
-.hero-left .tagline{
-    font-size: 25px;
-    font-family: "Space Grotesk", monospace;
-    font-weight: bold lighter;
-    color: #fffff0;
-}
-.code{
-    color: #fffff0;
-    font-family:'Cascadia Code', monospace;
+.text-code {
+    font-family: 'Cascadia Code', monospace;
     font-style: normal;
     font-size: 25px;
 }
-.hero-left .description{
-    font-size: 14px;
-    font-family: "Cascadia Code", monospace;
-    padding: 10px 20px 0px 0px;
-    color: #fffff0;
-}
-.bold{
+.bold {
     font-weight: bold;
 }
-.button-container{
+.bold-lt{
+    font-weight:lighter;
+}
+
+.button-container {
     padding: 10px 0;
 }
-.btn{
-    background-color: #ff3838;
-    color: #fffff0;
+
+.btn {
+    background-color: #3d405b;
     padding: 9px 11px;
-    border-radius:10px;
-    border:none;
+    border-radius: 10px;
+    border: none;
     font-family: "Inter", monospace;
     font-size: 10px;
     cursor: pointer;
     font-weight: bolder;
 }
-.btn:hover{
-    background-color:#3d405b;
-    color: #fffff0;
+.btn:hover {
+    background-color: #3d405b;
     transition: 0.3s all;
 }
-.row-reverse{
+
+.row-reverse {
     flex-direction: row-reverse;
     padding: 0px 0px 0px 20px;
 }
-.projects{
-    background-color:#f2cc8f;
-}
-footer{
-    background-color: #050e3c;
-    color: #fffff0;
+
+footer {
     text-align: center;
     padding: 10px 0;
-}
-@media screen and (max-width:950px){
-    nav{
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        align-items: center;
-    }
-    .hero{
-        flex-direction:column;
-        text-align: center;
-    }
-    .project-list{
-        flex-direction: column;
-        text-align: center;
-    }
-    .project-item{
-        flex-direction:column;
-        padding: 10px 0px 10px 0px;
-    }
-    .project-item h3{
-        padding: 10px 0px 5px 0px;
-    }
-    .project-item img{
-        width: 40vw;
-        height:40vh
-    }
-
 }
