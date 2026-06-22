@@ -92,6 +92,22 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.flex-col-rev{
+    flex-direction: column-reverse;
+}
+.flex-col-rev{
+    flex-direction: row-reverse;
+}
 /* Inline hyperlinks */
 a {
     color: inherit;
@@ -119,7 +135,7 @@ nav {
     font-family: "Space Grotesk", sans-serif;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
     background-color: var(--surface);
     border-bottom: var(--border);
     position: sticky;
@@ -139,7 +155,6 @@ nav {
     transform-origin: left;
     transition: transform 0.4s ease;
 }
-
 .nav-links li:hover::after {
     transform: scaleX(1);
 }
@@ -167,11 +182,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 70vw;
 }
 #hero .text-primary{
-    margin-right: 30vw;
+    margin-right: 20vw;
 }
-/* Buttons */
+/* BUTTONS */
 .button-container {
     display: flex;
     flex-direction: row;
@@ -197,12 +213,36 @@ main {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
 }
-
-.row-reverse {
-    flex-direction: row-reverse;
-    padding: 0px 0px 0px 20px;
+/* SKILLS */
+#skills{
+    display: grid;
 }
-
+.skill-list div, .tech-stack div{
+    background-color: var(--bronze);
+    border-radius: 10px;
+    margin: 8px 10px 10px 0px;
+    gap: 10px;
+    padding: 0.5rem;
+}
+/* PROJECTS */
+.project-list{
+    gap: 40px;
+}
+.project-info{
+    margin-top: 20px;
+    margin-right: 20px;
+    max-width: 50vw;
+    gap: 10px;
+    padding: 1rem;
+    align-items: center;
+}
+.project-item{
+    border-color: var(--bronze);
+    border-style: dashed;
+    border-radius: 10px;
+    background-color: var(--surface);
+    gap: 10px;
+}
 footer {
     text-align: center;
     padding: 10px 0;
