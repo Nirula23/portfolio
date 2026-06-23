@@ -258,13 +258,19 @@ main {
 }
 
 /* SKILLS */
-.skill-list {
-    margin-bottom: 1rem;
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10px,1fr));;
+    column-gap: normal;
+    align-items: center;
 }
-
+.skill-list {
+    margin-top: 1rem;
+}
 .skill-list div {
-    background-color: #111827;
-    color: var(--surface);
+    background-color: var(--surface);
+    border-radius: 10%;
+    color: var(--space-blue);
     margin: 8px 10px 10px 0px;
     gap: 10px;
     padding: 0.5rem;
@@ -278,6 +284,10 @@ main {
     gap: 1rem;
     transition: all .25s ease;
     /*box-shadow: 0 4px 12px var(--shadow);*/
+}
+.skill-card img{
+    width: 56px;
+    height: 56px;
 }
 
 /* PROJECTS */
