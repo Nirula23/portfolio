@@ -214,19 +214,39 @@ main {
     -webkit-transition: 0.4s ease-in-out;
 }
 /* SKILLS */
-#skills{
+.skill-grid{
     display: grid;
 }
-.skill-list div, .tech-stack div{
-    background-color: var(--bronze);
-    border-radius: 10px;
+.skill-list{
+    margin-bottom: 1rem;
+}
+.skill-list div {
+    background-color: #111827;
+    color: var(--surface);
     margin: 8px 10px 10px 0px;
     gap: 10px;
     padding: 0.5rem;
 }
+.skill-card{
+    align-items: center;
+    font-size: var(--fs-xs);
+    background:var(--surface);
+    border:1px solid var(--border);
+    gap: 1rem;
+    transition:all .25s ease;
+    /*box-shadow: 0 4px 12px var(--shadow);*/
+}
 /* PROJECTS */
 .project-list{
     gap: 40px;
+}
+.tech-stack div{
+    background-color: #dc6516;
+    color: var(--surface);
+    border-radius: 10px;
+    margin: 8px 10px 10px 0px;
+    gap: 10px;
+    padding: 0.5rem;
 }
 .project-info{
     margin-top: 20px;
